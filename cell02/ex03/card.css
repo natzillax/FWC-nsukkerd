@@ -1,0 +1,66 @@
+body {
+    text-align: center;
+    background-color: #f4f4f4;
+    margin-top: 20px;
+}
+
+.card-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: none; 
+    background-color: pink;
+    width: 250px;
+}
+
+.card-table td {
+    padding: 10px;
+    border: none; 
+}
+
+
+.profile-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.login {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+.description {
+    font-size: 14px;
+    color: #666;
+}
+
+.location {
+    font-size: 14px;
+    color: #333;
+    padding-bottom: 5px;
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+
+.contact-td {
+    padding: 0 !important;
+}
+
+.contact-btn {
+    width: 100%;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    padding: 15px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-btn:hover {
+    background-color: #333;
+}
