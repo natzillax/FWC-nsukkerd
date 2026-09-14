@@ -1,0 +1,33 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.parallax {
+    height: 100vh; 
+    background-attachment: fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img1 {
+    background-image: url('https://img.magnific.com/free-vector/simple-vibing-cat-square-meme_742173-4493.jpg?semt=ais_hybrid&w=740&q=80');
+}
+
+.img2 {
+    background-image: url('https://stickershop.line-scdn.net/stickershop/v1/product/31029852/LINEStorePC/main.png?v=1');
+}
+
+.black-block {
+    background-color: black;
+    color: white;
+    padding: 150px 20px;
+    text-align: center;
+    font-size: 20px;
+}
