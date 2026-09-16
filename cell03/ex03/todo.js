@@ -1,7 +1,6 @@
 const ftList = document.getElementById('ft_list');
 const newBtn = document.getElementById('new_btn');
 
-// โหลดข้อมูลจาก Cookie เมื่อเปิดหน้าเว็บ
 window.onload = function() {
     const cookies = document.cookie.split('; ');
     const todoCookie = cookies.find(row => row.startsWith('todos='));
@@ -38,7 +37,7 @@ function createTodo(text) {
     ftList.prepend(div);
 }
 
-// ฟังก์ชันบันทึกรายการลง Cookie
+// ฟังก์ชันบันทึกรายการ
 function saveTodos() {
     const todos = [];
     const items = ftList.querySelectorAll('div');
