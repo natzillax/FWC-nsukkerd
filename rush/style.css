@@ -1,8 +1,9 @@
 body {
     font-family: Arial, sans-serif;
-    background-color:pink;
+    background-color: pink;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 .main-container {
@@ -36,39 +37,28 @@ body {
 
 .profile-card {
     background: white;
-    border-radius: 15px;
+    border-radius: 25px;
+    margin-top: 10px;
     padding: 25px;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     flex: 1;
     min-width: 260px;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* เอฟเฟกต์ตอนเอาเมาส์ไปชี้การ์ด */
+.profile-img {
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 20%;
+    margin-bottom: 0;
+}
+
 .profile-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); 
+    box-shadow: 15px 15px 15px rgb(255, 7, 98);
 }
 
-/* วงกลมรูปโปรไฟล์ */
-.avatar {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 15px auto;
-}
-
-/* สีเฉพาะจุด */
-.bg-blue { background-color: #0d6efd; }
-.bg-green { background-color: #198754; }
-
-/* ปุ่มกด */
 .btn {
     display: block;
     padding: 10px 15px;
@@ -77,7 +67,16 @@ body {
     color: white;
     font-weight: bold;
     margin-top: 15px;
+    transition: transform 0.2s ease;
 }
 
-.btn-blue { background-color: #0d6efd; }
-.btn-green { background-color: #198754; }
+.btn-pink { background-color: rgb(255, 123, 255); }
+.btn-blue { background-color: rgb(140, 242, 240); color: black; }
+
+.btn-pink:hover, .btn-blue:hover {
+    transform: translateY(-3px);
+}
+
+.bg-theme-blue {
+    background-color: rgb(140, 242, 240); /* เปลี่ยนเฉดสีฟ้าได้ตามต้องการ */
+}
