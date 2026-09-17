@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:pink;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.main-title {
+    color: black;
+    font-size: 50px;
+    margin-bottom: 2px;
+}
+
+.subtitle {
+    color: gray;
+    margin-bottom: 25px;
+}
+
+.card-container {
+    display: flex;
+    gap: 70px;
+    max-width: 700px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.profile-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    flex: 1;
+    min-width: 260px;
+    transition: transform 0.2s ease;
+}
+
+/* เอฟเฟกต์ตอนเอาเมาส์ไปชี้การ์ด */
+.profile-card:hover {
+    transform: translateY(-5px);
+}
+
+/* วงกลมรูปโปรไฟล์ */
+.avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px auto;
+}
+
+/* สีเฉพาะจุด */
+.bg-blue { background-color: #0d6efd; }
+.bg-green { background-color: #198754; }
+
+/* ปุ่มกด */
+.btn {
+    display: block;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.btn-blue { background-color: #0d6efd; }
+.btn-green { background-color: #198754; }
